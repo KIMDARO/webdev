@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--CSS stylesheets-->
+    <meta charset="UTF-8">
+    <title>Contact Us - SpaceSite</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/site_logo.png" alt="SpaceSite Logo" class="logo-img"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="future.html">Future</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--This is for my page content-->
+    <main class="contact-page">
+        <h1 class="page-title">Contact Us</h1>
+
+        <section class="contact-wrap">
+
+            <form id="contactForm" class="contact-form" action="#" method="post">
+            <label for="fullName">Name</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                maxlength="100"
+                required
+                pattern = "^[A-Za-z\s]+$" <!-- Ensuring numbers are not used -->
+                title="Name must not contain numbers."
+            >
+        
+            
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                maxlength="255"
+                required
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Type your message here"
+                maxlength="1000"
+                required
+                rows="6"
+            ></textarea>
+
+            <button type="submit" class="send-btn">Send Message</button>
+            </form>
+
+            <div class="map-wrap">
+            <h2 class="map-title">Find Us</h2>
+
+            <!-- University of Exeter map embed -->
+            <iframe
+                class="google-map"
+                src="https://www.google.com/maps?q=University%20of%20Exeter&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map showing the University of Exeter"
+            ></iframe>
+            </div>
+
+        </section>
+   
+  </main>
+
+  <!--Footer section -->
+  <footer class="site-footer">
+    @ Copyright 2026. All rights reserved.  
+  </footer>
+
+</body>
+</html>
