@@ -4,9 +4,13 @@
 
 This project is a multi-page informational website focused on Human Space Activities. It provides an engaging overview of major historical milestones, current developments, and future missions in space exploration.
 
-This can be deployed using this link:
+This can be deployed using this link for the vm or on github:
 
+VM link
 http://ml-lab-4d78f073-aa49-4f0e-bce2-31e5254052c7.ukwest.cloudapp.azure.com:52821/home.html
+
+Github link:
+
 ---
 
 ## Website Purpose
@@ -100,3 +104,4 @@ Testing included:
 ## Author
 
 Developed by Oghenemaro Kimberly Emuophedaro
+
