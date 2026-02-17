@@ -1,0 +1,83 @@
+/* ===== Contact page ===== */
+
+.contact-page {
+  padding: 0 16px 40px 16px;
+}
+
+.contact-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.contact-form {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.contact-form label {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 12px 0 6px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0b3c5d;
+  box-shadow: 0 0 0 3px rgba(11,60,93,0.15);
+}
+
+.send-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 6px;
+
+  background: navy;  
+  color: white;      
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #2a52be;
+
+.map-wrap {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.map-title {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0 0 12px 0;
+}
+
+.google-map {
+  border-radius: 10px;
+}

@@ -1,0 +1,111 @@
+/* ===== History gallery ===== */
+
+.history-gallery {
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+}
+
+/* ===== History events ===== */
+
+.history-events {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Individual event card */
+.history-event {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  margin-bottom: 40px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-event img {
+  width: 260px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Hover glow effect */
+.history-event:hover {
+  border-color: #0b3c5d;
+  box-shadow: 0 0 12px rgba(11, 60, 93, 0.6);
+}
+
+/* Text styling */
+.event-text h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0 0 8px 0;
+}
+
+.event-text p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Mobile layout */
+@media (max-width: 800px) {
+  .history-event {
+    flex-direction: column;
+  }
+
+  .history-event img {
+    width: 100%;
+  }
+}
+
+/* ===== Gallery styles ===== */
+.gallery-title {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #0b3c5d;
+  margin-bottom: 20px;
+}
+
+/* 4×3 grid with 20px spacing */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+}
+
+/* Images */
+.gallery-grid img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Hover scale to 1.2 */
+.gallery-grid img:hover {
+  transform: scale(1.2);
+}
+
+/* Caption below image */
+.gallery-grid figcaption {
+  margin-top: 6px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive grid */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,96 @@
+/* ===== Future page timeline ===== */
+
+.future-page {
+  padding: 0 16px 40px 16px;
+}
+
+/* Timeline container */
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+
+/* The vertical line (centred) */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: darkblue; 
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Each item sits on the line */
+.timeline-item {
+  position: relative;
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* Card style */
+.timeline-card {
+  width: min(420px, 90%);
+  background: white;
+  border-radius: 10px;
+  padding: 16px 18px;
+  border: 2px solid #0b3c5d15;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Headline spec */
+.timeline-card h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: darkblue;
+  margin: 0 0 8px 0;
+}
+
+/* Description spec */
+.timeline-card p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Circular mission image */
+.mission-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease;
+}
+
+.mission-img:hover {
+  transform: scale(1.08);
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 800px) {
+  .timeline::before {
+    left: 22px; 
+    transform: none;
+  }
+
+  .timeline-item {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .timeline-card {
+    margin-left: 30px;
+  }
+}
